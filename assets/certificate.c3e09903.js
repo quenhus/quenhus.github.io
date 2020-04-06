@@ -15199,7 +15199,7 @@ parcelRequire = function(e, r, t, n) {
 			try {
 				for (t.s(); !(e = t.n()).done;) {
 					var n = e.value;
-					if (n.id != "field-datesortie" && n.id != "field-heuresortie") {
+					if (n.id != "field-datesortie" && n.id != "field-heuresortie" && n.type != 'checkbox') {
 						n.value = localStorage.getItem(n.id.substring("field-".length)) || '';
 					}
 				}
